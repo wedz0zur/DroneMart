@@ -1,0 +1,262 @@
+.product-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #000000;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #d4d4d4;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #000000;
+  background-color: #ffffff;
+}
+
+.form-input::placeholder {
+  color: #737373;
+}
+
+.form-input:disabled {
+  background-color: #f5f5f5;
+  color: #737373;
+  cursor: not-allowed;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.2s ease;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: #000000;
+  color: #ffffff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #404040;
+  border-color: #404040;
+  transform: translateY(-1px);
+}
+
+.btn-primary:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.btn-primary:disabled {
+  background: #737373;
+  border-color: #737373;
+  color: #d4d4d4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.spinner {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-right: 0.75rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.form-input:invalid {
+  border-color: #dc2626;
+}
+
+.form-input:valid {
+  border-color: #16a34a;
+}
+
+.form-input:placeholder-shown {
+  border-color: #d4d4d4;
+}
+
+.product-form {
+  animation: formAppear 0.3s ease-out;
+}
+
+@keyframes formAppear {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn:disabled .spinner {
+  border-top-color: #a3a3a3;
+}
+
+@media (max-width: 768px) {
+  .product-form {
+    padding: 0 0.5rem;
+  }
+  
+  .form-input {
+    padding: 0.875rem;
+  }
+  
+  .btn {
+    padding: 0.875rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-group {
+    margin-bottom: 1.25rem;
+  }
+  
+  .form-label {
+    font-size: 0.8rem;
+  }
+  
+  .form-input {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+  
+  .btn {
+    font-size: 0.8rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .product-form {
+    background: transparent;
+  }
+  
+  .form-input {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #404040;
+  }
+  
+  .form-input:focus {
+    background-color: #ffffff;
+    border-color: #000000;
+  }
+}
+
+.form-input[type="number"]::-webkit-outer-spin-button,
+.form-input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form-input:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.btn:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.btn:disabled {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.form-input:hover:not(:focus):not(:disabled) {
+  border-color: #a3a3a3;
+}
+
+.form-group:has(.form-input:invalid) .form-label {
+  color: #dc2626;
+}
+
+.form-group:has(.form-input:valid) .form-label {
+  color: #16a34a;
+}
+
+.product-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.btn {
+  gap: 0.5rem;
+}
+
+.form-input,
+.btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@media (prefers-contrast: high) {
+  .form-input {
+    border-width: 3px;
+  }
+  
+  .btn {
+    border-width: 3px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form-input,
+  .btn,
+  .spinner {
+    transition: none;
+    animation: none;
+  }
+  
+  .product-form {
+    animation: none;
+  }
+}

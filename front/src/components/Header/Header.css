@@ -1,0 +1,116 @@
+.header {
+  background: #ffffff;
+  border-bottom: 2px solid #000000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #000000;
+  letter-spacing: -0.02em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.tagline {
+  font-size: 0.75rem;
+  color: #737373;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: -2px;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+.user-email {
+  font-weight: 500;
+  color: #111111;
+}
+
+.user-status {
+  font-size: 0.75rem;
+}
+
+.user-status.active {
+  color: #16a34a;
+}
+
+.user-status.inactive {
+  color: #dc2626;
+}
+
+.banner {
+  background: #000000;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #404040;
+}
+
+.banner-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .header-brand {
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-user {
+    flex-direction: column;
+  }
+
+  .user-info {
+    text-align: center;
+  }
+}
+
+.hrefMain{
+  text-decoration: none;
+  cursor: pointer;
+}
