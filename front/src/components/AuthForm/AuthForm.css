@@ -1,0 +1,132 @@
+section {
+    padding-top: 17vh;
+    flex-direction: column;
+}
+
+.auth-links {
+    width: 220px;
+    justify-content: space-between;
+    margin-bottom: 39px;
+}
+
+.auth-link {
+    font-size: 21px;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.auth {
+    border-radius: 8px;
+    flex-direction: column;
+    padding: 88px 92px 83px 88px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.login {
+    width: 273px;
+    height: 245px;
+    border-radius: 8px;
+    flex-direction: column;
+}
+.registration{
+    flex-direction: column;
+
+}
+.input {
+    width: 273px;
+    height: 40px;
+    border-radius: 8px;
+    border: 0;
+    background-color: #F1F8FF;
+    margin-bottom: 9px;
+    padding: 8px 20px;
+}
+
+.input:focus {
+    outline: none;
+    border: solid 1px #4A90E2;
+}
+
+.checkbox-block {
+    width: 170px;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 22px;
+    margin-bottom: 12px;
+}
+
+.checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    background-color: #F1F8FF;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.checkbox:checked {
+    background-color: #4A90E2;
+    border-color: #4A90E2;
+}
+
+.checkbox:checked::after {
+    content: "✓";
+    display: block;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    line-height: 15px;
+}
+
+button{
+    width: 273px;
+    height: 40px;
+    font-size: 17px;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    margin-top: 32px;
+    background-color: #1E40AF;
+}
+
+.line-link{
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.line-block{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.google-block{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: solid 1px #4A90E2;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.google-block p{
+    font-size: 17px;
+}
+
+.google-block span{
+    font-weight: 700;
+}
+
+.google-logo{
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+}
