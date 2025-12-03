@@ -1,0 +1,94 @@
+.promotions {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.promotions-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+.promotions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.promotion-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+
+.promotion-img {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.4s ease;
+}
+
+.promotion-img-1 {
+    background-image: url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32');
+}
+
+.promotion-img-2 {
+    background-image: url('https://images.unsplash.com/photo-1473968512647-3e447244af8f');
+}
+
+.promotion-img-3 {
+    background-image: url('https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f');
+}
+
+.promotion-img-4 {
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+}
+
+.promotion-content {
+    padding: 20px;
+}
+
+.promotion-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.promotion-desc {
+    font-size: 14px;
+    color: #718096;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.promotion-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.promotion-date {
+    width: 200px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #e53e3e;
+    padding: 4px 10px;
+}
+
+.promotion-btn {
+    padding: 6px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+

@@ -6,7 +6,7 @@ header {
   z-index: 1000;
 }
 
-.container h1 {
+.lik-home {
   cursor: pointer;
   font-weight: 700;
   font-style: Bold;
@@ -14,9 +14,10 @@ header {
   line-height: 100%;
   letter-spacing: 0%;
   color: #2b3a4e;
+  text-decoration: none;
 }
 
-.container span {
+.header-span {
   width: 153px;
   height: 36px;
   font-weight: 400;

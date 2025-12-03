@@ -1,0 +1,91 @@
+.news-block {
+    margin-top: 50px;
+}
+
+.news-block-big {
+    width: 524px;
+    height: 483px;
+    border-radius: 8px;
+}
+
+.news-block-big-img {
+    width: 100%;
+    height: 431px;
+    background-image: url('https://mydrone.ru/images/ab__webp/thumbnails/825/549/blog/133/dji_flip_jpg.webp');
+    background-position: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.news-block-big-img:hover{
+    transform: scale(1.02);
+}
+
+.news-block-big-text {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.blocks {
+    justify-content: space-around;
+}
+
+.news-blocks-mini {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-block-mini {
+    width: 265px;
+    height: 227px;
+    border-radius: 8px;
+}
+
+.news-block-title {
+    margin-bottom: 20px;
+}
+
+.news-block-mini-img-1 {
+    background-image: url('https://mydrone.ru/images/ab__webp/thumbnails/402/268/blog/132/DJI_NEO_novaya_informatsia_o8ds-hi_jpg.webp');
+}
+
+.news-block-mini-img-2 {
+    background-image: url('https://mydrone.ru/images/ab__webp/thumbnails/402/268/blog/132/DJI_NEO_novaya_informatsia_jpg.webp');
+}
+
+.news-block-mini-img-3 {
+    background-image: url('https://mydrone.ru/images/ab__webp/thumbnails/402/268/blog/132/dji-neo____jpg.webp');
+}
+
+.news-block-mini-img-4 {
+    background-image: url('https://mydrone.ru/images/ab__webp/thumbnails/402/268/blog/131/dji-mini-4k-release-date_jpg.webp');
+}
+
+.news-block-mini-img-5 {
+    background-image: url('https://mydrone.ru/images/ab__webp/thumbnails/402/268/blog/131/dji-mini-4k__jpg.webp');
+}
+
+.news-block-mini-img-6 {
+    background-image: url('https://mydrone.ru/images/ab__webp/thumbnails/402/268/blog/124/toolkitrc_jpg.webp');
+}
+
+.news-block-mini-text{
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.news-block-mini-img{
+    width: 265px;
+    height: 175px;
+    cursor: pointer;
+    background-position: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.news-block-mini-img:hover{
+    transform: scale(1.05);
+}
