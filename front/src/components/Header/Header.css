@@ -44,7 +44,7 @@ header {
   background: #1E40AF;
 }
 
-.container input {
+.header-input {
   border-radius: 0 8px 8px 0;
   width: 641px;
   height: 52px;
@@ -57,7 +57,7 @@ header {
   border: 0;
 }
 
-.container input:focus {
+.header-input:focus {
   outline: none;
   border-color: #ff4d4d;
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='7' stroke='%23FF4D4D' stroke-width='2'/%3E%3Cpath d='M16 16L21 21' stroke='%23FF4D4D' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");

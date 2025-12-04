@@ -9,12 +9,14 @@ const Header = () => {
         <Link to="/" className="link-home">DroneMart</Link>
         <span className="header-span">Лучшие цены в интернет-магазинах </span>
         <button className="catalog">Каталог товаров</button>
-        <input type="search" placeholder="Поиск товаров"></input>
+        <input className="header-input" type="search" placeholder="Поиск товаров"></input>
         <div className="header-item flex center">
           <img src="/images/heart.svg"></img>
         </div>
         <div className="header-item flex center">
-          <img src="/images/basket.svg" className="basket"></img>
+          <Link to="/basket">
+            <img src="/images/basket.svg" className="basket"></img>
+          </Link>
         </div>
         <div className="header-item flex center">
           <img src="/images/user.svg"></img>

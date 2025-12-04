@@ -7,7 +7,10 @@ import { observer } from "mobx-react-lite";
 import UserService from "./services/Auth/UserService.ts";
 import { IUser } from "./models/response/IUser";
 import "./style.css"
-import Main from "./components/Main/Main.js";
+import Main from "./pages/Main/Main.js";
+import Footer from "./components/Footer/Footer";
+import Basket from "./pages/Basket/Basket";
+
 
 const App: FC = () => {
   const { authStore } = useContext(Context);
@@ -50,7 +53,9 @@ const App: FC = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/basket" element={<Basket />} />
       </Routes>
+      <Footer/>
     </div>
   );
 };
