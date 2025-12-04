@@ -51,6 +51,26 @@ footer {
 }
 
 .footer-social-icons{
-    width: 170px;
+    width: 150px;
+    justify-content: space-between;
+}
+
+.footer-social-icon{
+    cursor: pointer;
+}
+
+.footer-link-police{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer-block-second{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-link-police-block{
+    width: 280px;
     justify-content: space-between;
 }

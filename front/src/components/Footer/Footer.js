@@ -15,12 +15,21 @@ const Footer = () => {
                         <Link to="/support" className="footer-link-nav">Помощь</Link>
 
                     </nav>
-                    <div className="footer-social-icons flex"></div>
+                    <div className="footer-social-icons flex">
+                        <img src="/images/twitter.svg" className="footer-social-icon"></img>
+                        <img src="/images/facebook.svg" className="footer-social-icon"></img>
+                        <img src="/images/instagramm.svg" className="footer-social-icon"></img>
+                        <img src="/images/telegram.svg" className="footer-social-icon"></img>
+                    </div>
                 </div>
                 <div className="footer-block-line"></div>
-                <div className="footer-block-second"></div>
-
-                adssdasda
+                <div className="footer-block-second flex">
+                    <p className="footer-link-police">© Copyright 2021, All Rights Reserved</p>
+                    <div className="footer-link-police-block flex">
+                        <Link className="footer-link-police">Privacy Policy</Link>
+                        <Link className="footer-link-police">Terms & Conditions</Link>
+                    </div>
+                </div>
             </section>
         </footer>
     )
