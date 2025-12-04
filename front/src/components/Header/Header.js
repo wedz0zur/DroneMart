@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className=" flex v-center">
       <div className="container flex v-center">
-        <Link to="/" className="lik-home">DroneMart</Link>
+        <Link to="/" className="link-home">DroneMart</Link>
         <span className="header-span">Лучшие цены в интернет-магазинах </span>
         <button className="catalog">Каталог товаров</button>
         <input type="search" placeholder="Поиск товаров"></input>

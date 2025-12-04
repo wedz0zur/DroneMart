@@ -84,7 +84,7 @@ const Popular_products = () => {
                             className="item-btn2" 
                             disabled={!product.inStock}
                         >
-                            {product.inStock ? 'В корзину' : 'Уведомить о поступлении'}
+                            {product.inStock ? 'В корзину' : 'Нет в наличии'}
                         </button>
                     </div>
                 ))}
