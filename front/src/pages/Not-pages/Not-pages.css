@@ -1,0 +1,43 @@
+.not-pages-component {
+    min-height: calc(100vh - 267px);
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.not-pages-items {
+    width: 750px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.not-pages-bold-text {
+    text-align: center;
+    font-weight: 700;
+}
+
+.not-pages-bold-text span {
+    font-size: 50px;
+}
+
+.not-pages-bold-text p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.x-img {
+    margin-bottom: 10px;
+}
+
+.not-pages-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #707070;
+}

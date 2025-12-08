@@ -146,7 +146,38 @@
     color: #1D6BDD;
 }
 
-.description span{
+.description span {
     color: #1D6BDD;
     cursor: pointer;
+}
+
+.count-btn {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    border-width: 1px;
+    border-color: #707070;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+    box-sizing: border-box;
+    flex-shrink: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; 
+    margin: 0; 
+}
+
+.count-btn-block {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.count {
+    min-width: 30px;
+    text-align: center;
+    font-weight: bold;
 }

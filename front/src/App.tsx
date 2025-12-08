@@ -7,9 +7,11 @@ import { observer } from "mobx-react-lite";
 import UserService from "./services/Auth/UserService.ts";
 import { IUser } from "./models/response/IUser";
 import "./style.css"
-import Main from "./pages/Main/Main.js";
+import Main from "./components/Main/Main.js";
 import Footer from "./components/Footer/Footer";
 import Basket from "./pages/Basket/Basket";
+import Favorites from "./pages/Favorites/Favorites.js";
+import Not_pages from "./pages/Not-pages/Not-pages.js";
 
 
 const App: FC = () => {
@@ -54,6 +56,8 @@ const App: FC = () => {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/basket" element={<Basket />} />
+        <Route path="/favorites" element={<Favorites />} />
+        <Route path="*" element={<Not_pages />} />
       </Routes>
       <Footer/>
     </div>

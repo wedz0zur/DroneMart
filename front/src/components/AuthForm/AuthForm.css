@@ -83,7 +83,7 @@ section {
     line-height: 15px;
 }
 
-button{
+.auth-btn{
     width: 273px;
     height: 40px;
     font-size: 17px;

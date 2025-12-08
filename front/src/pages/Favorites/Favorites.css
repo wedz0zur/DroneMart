@@ -1,0 +1,5 @@
+.favorites-component {
+    min-height: calc(100vh - 267px);
+    padding-top: 100px;
+    margin-bottom: 30px;
+}

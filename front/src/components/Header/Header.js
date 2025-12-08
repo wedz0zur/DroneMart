@@ -11,10 +11,12 @@ const Header = () => {
         <button className="catalog">Каталог товаров</button>
         <input className="header-input" type="search" placeholder="Поиск товаров"></input>
         <div className="header-item flex center">
-          <img src="/images/heart.svg"></img>
+          <Link to="favorites">
+            <img src="/images/heart.svg"></img>
+          </Link>
         </div>
         <div className="header-item flex center">
-          <Link to="/basket">
+          <Link to="basket">
             <img src="/images/basket.svg" className="basket"></img>
           </Link>
         </div>

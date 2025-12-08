@@ -49,7 +49,7 @@ const LoginForm: FC = () => {
             <div className="checkbox-block flex">
               <input className="checkbox" type="checkbox" /> <label htmlFor="">Запомнить меня</label>
             </div>
-            <button className="button" onClick={() => authStore.login(email, password)}>Логин</button>
+            <button className="button auth-btn" onClick={() => authStore.login(email, password)}>Логин</button>
             <div className="line"></div>
             <div className="line-block flex center">
               <Link className="line-link" to="#">
@@ -95,7 +95,7 @@ const LoginForm: FC = () => {
               placeholder="Подтвердите пароль"
               className="input"
             ></input> */}
-            <button className="button" style={{ marginTop: "37px" }} onClick={() => authStore.registration(name, lastName, email,  password)}>Регистрация</button>
+            <button className="button auth-btn" style={{ marginTop: "37px" }} onClick={() => authStore.registration(name, lastName, email,  password)}>Регистрация</button>
             <div className="line"></div>
           </div>
         )}

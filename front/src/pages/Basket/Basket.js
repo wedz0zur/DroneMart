@@ -1,11 +1,24 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./Basket.css"
 
+
+
 const Basket = () => {
+    const [counter, setCounter] = useState(0);
+    function plusBtn(){
+        if(counter < 10){
+            setCounter(counter +1)  
+        }
+    }
+    function minusBtn(){
+        if(counter > 0){
+            setCounter(counter -1)  
+        }
+    }
     return (
         <div className='basket-component container'>
             <div className='basket-title flex'>
-                <h1>Карзина</h1>
+                <h1>Корзина</h1>
                 <p>Очистить корзину</p>
             </div>
             <div className='basket-blocks-order flex g-distribute'>
@@ -14,7 +27,11 @@ const Basket = () => {
                         <img className='basket-block-item-img' src='/images/drone.jpg'></img>
                         <div className='basket-block-item-name-count flex'>
                             <p>Пеноплекс Кофморт 1185х585х20мм 20 плит, 13.86м2, 0.278м3</p>
-                            <p>34243</p>
+                            <div className='count-btn-block flex v-center g-distribute'>
+                                <button onClick={minusBtn} className='count-btn flex center'>-</button>
+                                <p className='count'>{counter}</p>
+                                <button onClick={plusBtn} className='count-btn flex center'>+</button>
+                            </div>
                         </div>
                         <div className='basket-block-item-x-price flex'>
                             <p>X</p>
@@ -25,6 +42,7 @@ const Basket = () => {
                         <img className='basket-block-item-img' src='/images/drone.jpg'></img>
                         <div className='basket-block-item-name-count flex'>
                             <p>Пеноплекс Кофморт 1185х585х20мм 20 плит, 13.86м2, 0.278м3</p>
+                            
                             <p>34243</p>
                         </div>
                         <div className='basket-block-item-x-price flex'>
