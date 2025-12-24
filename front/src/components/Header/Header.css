@@ -40,7 +40,7 @@ header {
   cursor: pointer;
 }
 
-.catalog:hover{
+.catalog:hover {
   background: #1E40AF;
 }
 
@@ -59,26 +59,25 @@ header {
 
 .header-input:focus {
   outline: none;
-  border-color: #ff4d4d;
-  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='7' stroke='%23FF4D4D' stroke-width='2'/%3E%3Cpath d='M16 16L21 21' stroke='%23FF4D4D' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  border-color: #1E40AF;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='7' stroke='%232563EB' stroke-width='2'/%3E%3Cpath d='M16 16L21 21' stroke='%232563EB' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
-.header-item{
-    width: 52px;
-    height: 52px;
-    border-radius: 8px;
-    background: #F2F5F9;
-    margin-left: 20px;
-    cursor: pointer;
+.header-item {
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  background: #F2F5F9;
+  margin-left: 20px;
+  cursor: pointer;
 }
 
-.header-item img{
-    width: 20px;
-    height: 20px;
+.header-item img {
+  width: 20px;
+  height: 20px;
 }
 
 .header-item img.basket {
-    width: 23px;
-    height: 23px;
+  width: 23px;
+  height: 23px;
 }
-

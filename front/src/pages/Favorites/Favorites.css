@@ -1,5 +1,119 @@
-.favorites-component {
-    min-height: calc(100vh - 267px);
-    padding-top: 100px;
-    margin-bottom: 30px;
+.favorites-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.favorites-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.favorite-card {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.favorite-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.favorite-image-wrapper {
+    width: 100%;
+    height: 180px;
+    background: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.favorite-image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.favorite-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.favorite-name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.favorite-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+    flex-grow: 1;
+}
+
+.favorite-price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 14px;
+}
+
+.favorite-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.favorite-remove-btn {
+    flex: 1;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 10px;
+    background: #ff4d4f;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.favorite-remove-btn:hover {
+    background: #e04345;
+}
+
+.favorite-remove-btn:active {
+    transform: scale(0.97);
+}
+
+.favorites-empty {
+    text-align: center;
+    margin-top: 80px;
+    color: #777;
+}
+
+.favorites-empty h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.favorites-empty p {
+    font-size: 15px;
+}
+
+.favorites-page .item::before {
+    content: none;
 }

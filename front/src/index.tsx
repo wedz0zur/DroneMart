@@ -1,6 +1,6 @@
 import React, { createContext } from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom"; // Импортируйте BrowserRouter
+import { BrowserRouter } from "react-router-dom"; 
 import App from "./App.tsx";
 import AuthStore from "./store/AuthStore.ts";
 import ProductStore from "./store/ProductStore.ts";
